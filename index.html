@@ -9,6 +9,19 @@
 <meta property="og:title" content="살림꿀템픽 | 오늘의 꿀템 링크">
 <meta property="og:description" content="오아 듀얼미스트 미니 무선가습기 29,800원 · 리뷰 13,040개 ★4.5">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="살림꿀템픽">
+<meta property="og:url" content="https://zibijjang-coder.github.io/sallim-links/">
+<meta property="og:image" content="https://zibijjang-coder.github.io/sallim-links/og-logo.png" />
+<meta property="og:image:secure_url" content="https://zibijjang-coder.github.io/sallim-links/og-logo.png" />
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="256">
+<meta property="og:image:height" content="256">
+<meta property="og:image:alt" content="살림꿀템픽 로고">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="살림꿀템픽 | 오늘의 꿀템 링크">
+<meta name="twitter:description" content="오아 듀얼미스트 미니 무선가습기 29,800원 · 리뷰 13,040개 ★4.5">
+<meta name="twitter:image" content="https://zibijjang-coder.github.io/sallim-links/og-logo.png" />
+<meta name="twitter:image:alt" content="살림꿀템픽 로고">
 <style>
   :root{
     --bg-deep:#071410;
@@ -256,6 +269,82 @@
   }
   .link:hover .go{transform:translateX(3px);opacity:1;}
 
+  /* ---------- past items ---------- */
+  .past{
+    display:flex;flex-direction:column;
+    border-radius:var(--radius);
+    padding:20px 18px 16px;
+    background:linear-gradient(170deg,rgba(255,255,255,.032),rgba(255,255,255,.012));
+    border:1px solid rgba(243,217,139,.13);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.04);
+  }
+  .past-title{
+    margin:0 0 5px;
+    display:flex;align-items:center;gap:8px;
+    font-size:15.5px;font-weight:800;letter-spacing:-.01em;
+    color:#fdf6e5;
+  }
+  .past-title .cnt{
+    font-size:11.5px;font-weight:700;letter-spacing:.01em;
+    color:var(--gold-light);
+    background:rgba(212,175,55,.14);
+    border:1px solid rgba(212,175,55,.3);
+    border-radius:999px;padding:1px 8px;
+  }
+  .past-sub{
+    margin:0 0 13px;
+    font-size:12px;line-height:1.62;
+    color:var(--ink-mute);
+    word-break:keep-all;
+  }
+  .past-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px;}
+  .past-item{
+    display:flex;align-items:center;gap:12px;
+    padding:11px 12px;
+    border-radius:13px;
+    text-decoration:none;
+    color:var(--ink);
+    background:rgba(255,255,255,.035);
+    border:1px solid rgba(243,217,139,.12);
+    transition:border-color .2s ease, background .2s ease, transform .18s ease;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .past-item:hover{
+    border-color:rgba(243,217,139,.42);
+    background:rgba(255,255,255,.07);
+    transform:translateY(-1px);
+  }
+  .past-item:active{transform:scale(.985);}
+  .past-item .pdate{
+    flex:0 0 auto;min-width:44px;text-align:center;
+    font-size:10.5px;font-weight:700;line-height:1.35;
+    letter-spacing:.01em;
+    color:var(--gold-light);
+    background:rgba(212,175,55,.1);
+    border:1px solid rgba(212,175,55,.24);
+    border-radius:9px;padding:5px 6px;
+  }
+  .past-item .pdate .d{display:block;font-size:12.5px;font-weight:800;color:#fff8e2;}
+  .past-item .pbody{flex:1 1 auto;min-width:0;}
+  .past-item .pname{
+    display:block;
+    font-size:13.5px;font-weight:700;letter-spacing:-.01em;
+    color:#fffaf0;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  }
+  .past-item .pmeta{display:block;margin-top:2px;font-size:11.5px;color:var(--ink-mute);}
+  .past-item .pgo{flex:0 0 auto;font-size:14px;color:var(--gold);opacity:.7;}
+  .past-empty{
+    padding:15px 12px;
+    border-radius:13px;
+    text-align:center;
+    font-size:12px;line-height:1.65;
+    color:var(--ink-mute);
+    background:rgba(255,255,255,.02);
+    border:1px dashed rgba(243,217,139,.16);
+    word-break:keep-all;
+  }
+
   /* ---------- footer ---------- */
   .notice{
     margin:6px 0 0;
@@ -299,6 +388,12 @@
 
   <div class="divider" aria-hidden="true">✦</div>
 
+  <!-- =================================================================
+       오늘의 꿀템 : TODAY_ITEMS_START ~ TODAY_ITEMS_END 사이만 교체하면 됩니다.
+       새 꿀템이 올라오면 이 카드를 [지난 꿀템 모음]맨 위로 옮기고
+       새 카드를 이 자리에 넣으세요. (카드 1개 = section.pick 1개)
+       ================================================================= -->
+  <!-- TODAY_ITEMS_START -->
   <section class="pick" aria-labelledby="pick-title">
     <span class="badge">🔥 11/23 오늘의 꿀템 · 로켓배송</span>
     <h2 id="pick-title">오아 듀얼미스트 미니 <span class="nb">무선가습기 <span class="vol">(500ml)</span></span></h2>
@@ -309,6 +404,29 @@
       쿠팡에서 최저가 보기 <span class="arrow" aria-hidden="true">→</span>
     </a>
     <p class="under">↗ 새 탭에서 열기 · 가격·재고는 변동될 수 있어요</p>
+  </section>
+  <!-- TODAY_ITEMS_END -->
+
+  <!-- =================================================================
+       지난 꿀템 모음 : PAST_ITEMS_START ~ PAST_ITEMS_END 사이에 li 항목을
+       위에서부터(최신순) 쌓습니다. 항목이 생기면 .past-empty 는 지우세요.
+       <li><a class="past-item" href="..." target="_blank" rel="noopener noreferrer sponsored">
+         <span class="pdate">11/22<span class="d">꿀템</span></span>
+         <span class="pbody">
+           <span class="pname">상품명</span>
+           <span class="pmeta">가격 · 리뷰 ★4.5</span>
+         </span>
+         <span class="pgo" aria-hidden="true">›</span>
+       </a></li>
+       ================================================================= -->
+  <section class="past" aria-labelledby="past-title">
+    <h2 class="past-title" id="past-title">📦 지난 꿀템 모음 <span class="cnt">0</span></h2>
+    <p class="past-sub">지난 쇼츠에서 소개한 꿀템도 여기서 계속 살 수 있어요.</p>
+    <ul class="past-list">
+      <!-- PAST_ITEMS_START -->
+      <li class="past-empty">아직 지난 꿀템이 없어요.<br>새 꿀템이 나오면 이곳에 차곡차곡 쌓여요 🧺</li>
+      <!-- PAST_ITEMS_END -->
+    </ul>
   </section>
 
   <nav class="links" aria-label="채널 바로가기">
